@@ -18,8 +18,11 @@ app.get('/api/notes', (req, res)=>{
 
 app.post('/api/notes', (req, res)=>{
     let savedNotes = req.body
+    console.log(req.body)
+    savedNotes.id=uuid();
     noteList.push(savedNotes)
     fs.writeFileSync('db/db.json', JSON.stringify(noteList))
+    console.log(noteList)
     res.json(noteList)
 });
 
