@@ -1,10 +1,10 @@
 const express = require('express');
 const app = express();
-const fs = require('fs')
-const uuid = require('node-uuid')
+const fs = require('fs');
+const uuid = require('node-uuid');
 const PORT = process.env.PORT || 5000;
 
-app.use(express.static('public'))
+app.use(express.static('public'));
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 
@@ -29,8 +29,8 @@ app.delete(`/api/notes/:id`, (req, res)=>{
     noteList = noteList.filter(item => item.id !== removal)
     fs.writeFileSync('db/db.json', JSON.stringify(noteList))
     res.end('deleted')
-})
+});
 
 app.listen(PORT, () => {
     console.log('Server is running', PORT)
-})
+});
