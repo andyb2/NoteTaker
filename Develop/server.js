@@ -26,6 +26,9 @@ app.post('/api/notes', (req, res)=>{
     res.json(noteList)
 });
 
+app.delete(`/api/notes/:id`, (req, res)=>{
+})
+
 app.listen(PORT, () => {
     console.log('Server is running', PORT)
 })
