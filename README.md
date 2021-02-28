@@ -1,37 +1,72 @@
-
 # Note Taker
+
 ![MIT License](https://img.shields.io/badge/license-MIT%20License-blue.svg)
 
-## Description
-Note taker is a way for users to save messages for themseleves for further use
+# Description
 
-## Table of Contents
-* [Installation](#installation)
-* [Usage](#usage)
-* [Credits](#credits)
-* [Questions](#questions)
-* [License](#license)
+Note taker is an application that allows users to write notes and save those notes to be viewed for later.
 
-## Installation
+Goals for this project:
 
+1. Use node js to tie the front end starter code to the back end
+2. The user can write a note and save it
+3. The user can click on the saved note and it will show the full note
+4. The user can delete the note
 
-## Usage
+# Table of Contents
 
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [Questions](#questions)
+- [License](#license)
 
-## Credits
-Created by: 
+# Installation
+
+No installation required. Use [Note Taker App](https://utornotetaker.herokuapp.com/) to use this application.
+
+# Usage
+
+Press the get started button.
+
+![Get started button](/Assets/screenshots/getStartedSS.jpg)
+
+The blank notepad will appear showing Note Title and Note text. The user can write in these textareas to save a note.
+
+![Empty note](/Assets/screenshots/emptyNoteSS.jpg)
+
+When the user has finished writing their note they can press the save button at the top right corner of the page beside the pencil. This will allow the user to save their note.
+
+![Saved note button](/Assets/screenshots/savedNoteSS.jpg)
+
+The note will then appear on the left side of the page.
+
+![saved note on left side](/Assets/screenshots/savedSS.jpg)
+
+If the user wants to view a saved note they can simply press on the notes title text and the note will reappear back into view.
+
+![saved note on left side](/Assets/screenshots/showNoteSS.jpg)
+
+The user can also delete the saved note by pressing on the red garbage can.
+
+# Credits
+
+Created by:
 Andrew Boyle
 [Git Hub Profile](https://github.com/Andyb2)
 
-## Questions
+[Note Taker App](https://utornotetaker.herokuapp.com/)
+
+# Questions
+
 If you have any questions about this project please email:
 a.michael.boyle@gmail.com
 
-## License
+# License
 
 MIT License
 
-    Copyright (c) [year] [fullname]
+    Copyright (c) [2021] [Andrew Boyle]
 
     Permission is hereby granted, free of charge, to any person obtaining a copy
     of this software and associated documentation files (the "Software"), to deal
@@ -50,4 +85,3 @@ MIT License
     LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
     OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
     SOFTWARE.
-  
