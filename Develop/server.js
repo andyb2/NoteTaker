@@ -15,3 +15,7 @@ let noteList = JSON.parse(fs.readFileSync('db/db.json', 'utf8'));
 app.get('/api/notes', (req, res)=>{
     res.send(noteList)
 });
+
+app.listen(PORT, () => {
+    console.log('Server is running', PORT)
+})
