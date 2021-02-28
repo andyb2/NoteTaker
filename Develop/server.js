@@ -16,6 +16,13 @@ app.get('/api/notes', (req, res)=>{
     res.send(noteList)
 });
 
+app.post('/api/notes', (req, res)=>{
+    let savedNotes = req.body
+    noteList.push(savedNotes)
+    fs.writeFileSync('db/db.json', JSON.stringify(noteList))
+    res.json(noteList)
+});
+
 app.listen(PORT, () => {
     console.log('Server is running', PORT)
 })
