@@ -13,5 +13,5 @@
     "node-uuid": "^1.4.8"
   },
   "devDependencies": {},
-  "description": ""
+  "description": "![MIT License](https://img.shields.io/badge/license-MIT%20License-blue.svg)"
 }
