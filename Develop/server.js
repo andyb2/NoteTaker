@@ -27,6 +27,10 @@ app.post('/api/notes', (req, res)=>{
 });
 
 app.delete(`/api/notes/:id`, (req, res)=>{
+    const removal = req.params.id;
+    noteList = noteList.filter(item => item.id !== removal)
+    fs.writeFileSync('db/db.json', JSON.stringify(noteList))
+    res.end('deleted')
 })
 
 app.listen(PORT, () => {
